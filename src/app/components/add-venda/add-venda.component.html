@@ -1,0 +1,9 @@
+<form (submit)="addVenda()">
+  <label for="cliente">Cliente</label>
+  <input type="text" name="cliente" [(ngModel)]="cliente" placeholder="Cliente">
+  <label for="valor">Valor</label>
+  <input type="text" name="valor" placeholder="Valor" [(ngModel)]="valor">
+  <label for="data">Data</label>
+  <input type="date" name="data" [(ngModel)]="data">
+  <input type="submit" class="btn btn-primary" value="Enviar">
+</form>

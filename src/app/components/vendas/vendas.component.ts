@@ -1,3 +1,5 @@
+import { Vendas } from './../../models/Vendas';
+import { DadosService } from './../../services/dados.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VendasComponent implements OnInit {
 
-  constructor() { }
+  vendas: Vendas[];
+
+  constructor(public service: DadosService) { }
 
   ngOnInit() {
+
+    this.vendas = this.service.getPerguntas();
+  }
+
+    serviceVenda(venda: Vendas){
+      console.log(venda);
+      this.service.addVenda(venda);
   }
 
 }

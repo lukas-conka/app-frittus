@@ -1,3 +1,3 @@
-<p>
-  vendas works!
-</p>
+<app-add-venda (vendaAdd)="serviceVenda($event)"></app-add-venda>
+<hr>
+<app-venda *ngFor="let venda of vendas" [vendaInput]="venda"></app-venda>

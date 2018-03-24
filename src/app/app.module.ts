@@ -9,6 +9,8 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { VendasComponent } from './components/vendas/vendas.component';
 import { ComprasComponent } from './components/compras/compras.component';
 import { FormsModule} from '@angular/forms';
+import { AddVendaComponent } from './components/add-venda/add-venda.component';
+import { VendaComponent } from './components/venda/venda.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { FormsModule} from '@angular/forms';
     NavbarComponent,
     DashboardComponent,
     VendasComponent,
-    ComprasComponent
+    ComprasComponent,
+    AddVendaComponent,
+    VendaComponent
   ],
   imports: [
     BrowserModule,
